@@ -4,7 +4,7 @@
   <subtitle><![CDATA[learn by doing]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gozeyang.com/"/>
-  <updated>2016-01-09T21:38:25.898Z</updated>
+  <updated>2016-01-15T07:15:08.012Z</updated>
   <id>http://gozeyang.com/</id>
   
   <author>
@@ -15,42 +15,90 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[my new post-1st我的第一篇新文章]]></title>
-    <link href="http://gozeyang.com/2016/01/09/my-new-post-1st/"/>
-    <id>http://gozeyang.com/2016/01/09/my-new-post-1st/</id>
-    <published>2016-01-09T21:35:57.000Z</published>
-    <updated>2016-01-09T21:38:25.898Z</updated>
-    <content type="html"><![CDATA[<p>#这里是正文，用markdown写，使用方法参照我原来的博客<a href="http://zipperary.com/2013/05/22/introduction-to-markdown/" target="_blank" rel="external">Introduction to markdown</a></p>
+    <title><![CDATA[文章嵌入图片，音乐，视频]]></title>
+    <link href="http://gozeyang.com/2016/01/15/%E6%96%87%E7%AB%A0%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87,%20%E9%9F%B3%E4%B9%90,%20%E8%A7%86%E9%A2%91/"/>
+    <id>http://gozeyang.com/2016/01/15/文章嵌入图片, 音乐, 视频/</id>
+    <published>2016-01-15T06:45:37.000Z</published>
+    <updated>2016-01-15T07:15:08.012Z</updated>
+    <content type="html"><![CDATA[<p>这是一篇练习, 参照<a href="http://zipperary.com/2013/06/27/media-on-hexo/" target="_blank" rel="external">教程</a><br><a id="more"></a></p>
+<h2 id="u56FE_u7247"><a href="#u56FE_u7247" class="headerlink" title="图片"></a>图片</h2><p>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](http://ww1.sinaimg.cn/large/735df598gw1f006rvt6njj20mu0cuq62.jpg)</span><br></pre></td></tr></table></figure></p>
+<p>效果：<br><img src="http://ww1.sinaimg.cn/large/735df598gw1f006rvt6njj20mu0cuq62.jpg" alt=""></p>
+<h2 id="u89C6_u9891"><a href="#u89C6_u9891" class="headerlink" title="视频"></a>视频</h2><p>嵌入视频的方法和音乐类似，视频网站每个视频页面都会有一个『分享』或『转帖』按钮，点击可以查看代码。<br>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;embed src=&#34;http://player.youku.com/player.php/sid/XMjQyMDM2NzY0/v.swf&#34; allowFullScreen=&#34;true&#34; quality=&#34;high&#34; width=&#34;480&#34; height=&#34;400&#34; align=&#34;middle&#34; allowScriptAccess=&#34;always&#34; type=&#34;application/x-shockwave-flash&#34;&#62;&#60;/embed&#62;</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<embed src="http://player.youku.com/player.php/sid/XMjQyMDM2NzY0/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
+
+<h2 id="u4E07_u80FD"><a href="#u4E07_u80FD" class="headerlink" title="万能"></a>万能</h2><p>对于有些音乐、视频找不到『转帖』按钮的，可以查看源代码，找到相应的代码块贴在文中。若找不到，说明该文件的确不能放在自己文中了。(大哥我做不到)</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>#这里是正文，用markdown写，使用方法参照我原来的博客<a href="http://zipperary.com/2013/05/22/introduction-to-markdown/" target="_blank" rel="external">Introduc]]>
+    <![CDATA[<p>这是一篇练习, 参照<a href="http://zipperary.com/2013/06/27/media-on-hexo/">教程</a><br>]]>
+    
     </summary>
     
-      <category term="博客 文章" scheme="http://gozeyang.com/tags/%E5%8D%9A%E5%AE%A2-%E6%96%87%E7%AB%A0/"/>
+      <category term="Markdown" scheme="http://gozeyang.com/tags/Markdown/"/>
     
-      <category term="blog" scheme="http://gozeyang.com/categories/blog/"/>
+      <category term="practice" scheme="http://gozeyang.com/tags/practice/"/>
+    
+      <category term="Markdown" scheme="http://gozeyang.com/categories/Markdown/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://gozeyang.com/2016/01/09/hello-world/"/>
-    <id>http://gozeyang.com/2016/01/09/hello-world/</id>
-    <published>2016-01-09T20:55:44.508Z</published>
-    <updated>2016-01-09T20:55:44.508Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <title><![CDATA[第一篇文章 Markdown用法]]></title>
+    <link href="http://gozeyang.com/2016/01/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%20Markdown%E7%94%A8%E6%B3%95/"/>
+    <id>http://gozeyang.com/2016/01/09/第一篇文章 Markdown用法/</id>
+    <published>2016-01-09T21:35:57.000Z</published>
+    <updated>2016-01-15T06:49:02.974Z</updated>
+    <content type="html"><![CDATA[<p><del>好不容易搞定, 不太熟练markdown,</del>参照<a href="http://zipperary.com/2013/08/31/easy-markdown/" target="_blank" rel="external">教程</a>练习。<br><a id="more"></a></p>
+<h1 id="u8FD9_u91CC_u662F_u4E00_u7EA7_u6807_u9898"><a href="#u8FD9_u91CC_u662F_u4E00_u7EA7_u6807_u9898" class="headerlink" title="这里是一级标题"></a>这里是一级标题</h1><h3 id="u8FD9_u91CC_u662F_u4E09_u7EA7_u6807_u9898"><a href="#u8FD9_u91CC_u662F_u4E09_u7EA7_u6807_u9898" class="headerlink" title="这里是三级标题"></a>这里是三级标题</h3><p>段落前面没有缩进，看到了吧.<br>&emsp;&emsp;段落前面没有缩进，加了两个<code>&amp;emsp;</code>才是中文首段缩进.</p>
+<p><strong>两个星号包围的是粗体</strong><br>分割线用<code>---</code>，注意: 上面必须是enter空行</p>
+<hr>
+<p><em>一个星号包围的是斜体</em></p>
+<blockquote>
+<p>引用内容，多行的话，用两个空格结尾吧<br>引用内容2<br>引用内容3</p>
+</blockquote>
+<p>断开引用内容<br>更多高级的格式，请果断插入html标签<br><code>反引号`包围的是一小段代码(行内代码/html代码&amp;emsp;等)</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#三个反引号包围的是代码块</span></span><br><span class="line"><span class="comment">#会显示行号。</span></span><br><span class="line"><span class="comment">#也有高亮显示</span></span><br><span class="line"><span class="comment">#我上面加了python</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">print</span> os.sep</span><br></pre></td></tr></table></figure>
+<ol>
+<li>有序列表1，注意点之后的空格。</li>
+<li>有序列表2.</li>
+<li>我这里写成1，在显示时还是3，厉害不。</li>
+</ol>
+<ol>
+<li>有序列表1, 想断开？ 必须两个回车<br>详细内容</li>
+<li>有序列表2<br>详细内容</li>
+</ol>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2</li>
+<li>无序列表3<ul>
+<li>子表1</li>
+<li>子表2</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><p>This is a list item with two paragraphs. Lorem ipsum dolor<br>sit amet, consectetuer adipiscing elit. Aliquam hendrerit<br>mi posuere lectus.</p>
+<p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet<br>vitae, risus. Donec sit amet nisl. Aliquam semper ipsum<br>sit amet velit.</p>
+</li>
+<li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+</li>
+</ol>
+<p>超级链接：<a href="http://gozeyang.com">我的博客</a></p>
+<p>插入图片：<img src="http://ww2.sinaimg.cn/large/5e8cb366jw1e62o63tkv3j20dh078q5a.jpg" alt=""><br>或者：</p>
+<div align="center"><br><img src="http://ww2.sinaimg.cn/large/5e8cb366jw1e62o63tkv3j20dh078q5a.jpg" width="400" height="400" alt="好图"><br></div>
+
+<p>Markdown兼容html，你可以用html插入这些东西.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.]]>
+    <![CDATA[<p><del>好不容易搞定, 不太熟练markdown,</del>参照<a href="http://zipperary.com/2013/08/31/easy-markdown/">教程</a>练习。<br>]]>
+    
     </summary>
+    
+      <category term="Markdown" scheme="http://gozeyang.com/tags/Markdown/"/>
+    
+      <category term="practice" scheme="http://gozeyang.com/tags/practice/"/>
+    
+      <category term="Markdown" scheme="http://gozeyang.com/categories/Markdown/"/>
     
   </entry>
   

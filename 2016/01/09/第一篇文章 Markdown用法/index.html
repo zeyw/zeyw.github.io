@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Zeyang&#39;s blog</title>
+  <title>第一篇文章 Markdown用法 | Zeyang&#39;s blog</title>
   <meta name="author" content="Zeyang">
   
   <meta name="description" content="Zeyang&#39;s blog">
@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="第一篇文章 Markdown用法"/>
   <meta property="og:site_name" content="Zeyang&#39;s blog"/>
 
   
@@ -201,67 +201,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
-  
-    <div class="gallery">
-  <div class="photoset">
-    
-      <img src="">
-    
-  </div>
-  <div class="control">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-</div>
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-01-15T06:45:37.000Z"><a href="/2016/01/15/文章嵌入图片, 音乐, 视频/">2016-01-15</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2016/01/15/文章嵌入图片, 音乐, 视频/">文章嵌入图片，音乐，视频</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>这是一篇练习, 参照<a href="http://zipperary.com/2013/06/27/media-on-hexo/">教程</a><br>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2016/01/15/文章嵌入图片, 音乐, 视频/#more" class="more-link">阅读全文</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
-
-<!--多说公共JS代码 BEGIN -->
-
-<!-- 多说公共JS代码 end -->
-
-  
-
-
-
-
-  <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
     <div class="gallery">
   <div class="photoset">
@@ -283,28 +223,85 @@
       
       
   
-    <h1 class="title"><a href="/2016/01/09/第一篇文章 Markdown用法/">第一篇文章 Markdown用法</a></h1>
+    <h1 class="title">第一篇文章 Markdown用法</h1>
   
 
     </header>
     <div class="entry">
       
-        <p><del>好不容易搞定, 不太熟练markdown,</del>参照<a href="http://zipperary.com/2013/08/31/easy-markdown/">教程</a>练习。<br>
+        <p><del>好不容易搞定, 不太熟练markdown,</del>参照<a href="http://zipperary.com/2013/08/31/easy-markdown/" target="_blank" rel="external">教程</a>练习。<br><a id="more"></a></p>
+<h1 id="u8FD9_u91CC_u662F_u4E00_u7EA7_u6807_u9898"><a href="#u8FD9_u91CC_u662F_u4E00_u7EA7_u6807_u9898" class="headerlink" title="这里是一级标题"></a>这里是一级标题</h1><h3 id="u8FD9_u91CC_u662F_u4E09_u7EA7_u6807_u9898"><a href="#u8FD9_u91CC_u662F_u4E09_u7EA7_u6807_u9898" class="headerlink" title="这里是三级标题"></a>这里是三级标题</h3><p>段落前面没有缩进，看到了吧.<br>&emsp;&emsp;段落前面没有缩进，加了两个<code>&amp;emsp;</code>才是中文首段缩进.</p>
+<p><strong>两个星号包围的是粗体</strong><br>分割线用<code>---</code>，注意: 上面必须是enter空行</p>
+<hr>
+<p><em>一个星号包围的是斜体</em></p>
+<blockquote>
+<p>引用内容，多行的话，用两个空格结尾吧<br>引用内容2<br>引用内容3</p>
+</blockquote>
+<p>断开引用内容<br>更多高级的格式，请果断插入html标签<br><code>反引号`包围的是一小段代码(行内代码/html代码&amp;emsp;等)</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#三个反引号包围的是代码块</span></span><br><span class="line"><span class="comment">#会显示行号。</span></span><br><span class="line"><span class="comment">#也有高亮显示</span></span><br><span class="line"><span class="comment">#我上面加了python</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">print</span> os.sep</span><br></pre></td></tr></table></figure>
+<ol>
+<li>有序列表1，注意点之后的空格。</li>
+<li>有序列表2.</li>
+<li>我这里写成1，在显示时还是3，厉害不。</li>
+</ol>
+<ol>
+<li>有序列表1, 想断开？ 必须两个回车<br>详细内容</li>
+<li>有序列表2<br>详细内容</li>
+</ol>
+<ul>
+<li>无序列表1</li>
+<li>无序列表2</li>
+<li>无序列表3<ul>
+<li>子表1</li>
+<li>子表2</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li><p>This is a list item with two paragraphs. Lorem ipsum dolor<br>sit amet, consectetuer adipiscing elit. Aliquam hendrerit<br>mi posuere lectus.</p>
+<p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet<br>vitae, risus. Donec sit amet nisl. Aliquam semper ipsum<br>sit amet velit.</p>
+</li>
+<li><p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+</li>
+</ol>
+<p>超级链接：<a href="http://gozeyang.com">我的博客</a></p>
+<p>插入图片：<img src="http://ww2.sinaimg.cn/large/5e8cb366jw1e62o63tkv3j20dh078q5a.jpg" alt=""><br>或者：</p>
+<div align="center"><br><img src="http://ww2.sinaimg.cn/large/5e8cb366jw1e62o63tkv3j20dh078q5a.jpg" width="400" height="400" alt="好图"><br></div>
+
+<p>Markdown兼容html，你可以用html插入这些东西.</p>
+
       
     </div>
     <footer>
       
         
-          <div class="alignleft">
-            <a href="/2016/01/09/第一篇文章 Markdown用法/#more" class="more-link">阅读全文</a>
-          </div>
+  
+  <div class="categories">
+    <a href="/categories/Markdown/">Markdown</a>
+  </div>
+
         
-        
-      
+  
+  <div class="tags">
+    <a href="/tags/Markdown/">Markdown</a>, <a href="/tags/practice/">practice</a>
+  </div>
+
+		
+     
       <div class="clearfix"></div>
     </footer>
   </div>
 </article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2016/01/15/文章嵌入图片, 音乐, 视频/" class="alignleft prev" >上一页</a>
+    
+    
+    <div class="clearfix"></div>
+</nav>
 
 
 
@@ -313,19 +310,27 @@
 
 <!--多说公共JS代码 BEGIN -->
 
+<section id="comment">
+	<div class="ds-thread" ></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name: 'gozeyang'};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	</section>
+	
 <!-- 多说公共JS代码 end -->
 
   
 
 
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">

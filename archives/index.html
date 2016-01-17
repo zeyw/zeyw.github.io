@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档 | Zeyang&#39;s blog</title>
+  <title>Archives | Zeyang&#39;s blog</title>
   <meta name="author" content="Zeyang">
   
   <meta name="description" content="Zeyang&#39;s blog">
@@ -18,6 +18,7 @@
 
   
     <meta property="og:image" content="undefined"/>
+  
   
   <link href="/favicon.png" rel="icon">
   
@@ -37,13 +38,13 @@
 <nav id="main-nav" class="alignright">
   <ul>
     
-      <li><a href="/">首页</a></li>
+      <li><a href="/">Home</a></li>
     
-      <li><a href="/archives">归档</a></li>
+      <li><a href="/archives">Archives</a></li>
     
-      <li><a href="/about">关于</a></li>
+      <li><a href="/about">About</a></li>
     
-      <li><a href="/tools">工具</a></li>
+      <li><a href="/tools">Tools</a></li>
     
 	
 <li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
@@ -202,10 +203,22 @@
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">归档</h2>
+<h2 class="archive-title">Archives</h2>
 
 
   <div class="archive">
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2016-01-15T23:27:26.000Z"><a href="/2016/01/15/Markdown插入数学公式/">2016-01-15</a></time>
+            
+              <h1 class="title"><a href="/2016/01/15/Markdown插入数学公式/">Markdown插入数学公式</a></h1>
+            
+          </header>
+        </div>
+      </article>
     
       <article class="post">
         <div class="post-content">
@@ -236,17 +249,17 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="search" name="q" results="0" placeholder="Search">
     <input type="hidden" name="q" value="site:gozeyang.com">
   </form>
 </div>
 
   
 <div class="widget tag">
-  <h3 class="title">分类</h3>
+  <h3 class="title">Categories</h3>
   <ul class="entry">
   
-    <li><a href="/categories/Markdown/">Markdown</a><small>2</small></li>
+    <li><a href="/categories/Markdown/">Markdown</a><small>3</small></li>
   
   </ul>
 </div>
@@ -254,15 +267,15 @@
 
   
 <div class="widget tagcloud">
-  <h3 class="title">标签云</h3>
+  <h3 class="title">Tag Cloud</h3>
   <div class="entry">
-    <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/practice/" style="font-size: 10px;">practice</a>
+    <a href="/tags/Markdown/" style="font-size: 20px;">Markdown</a> <a href="/tags/formula/" style="font-size: 10px;">formula</a> <a href="/tags/practice/" style="font-size: 20px;">practice</a>
   </div>
 </div>
 
 
   <div class="widget tag">
-<h3 class="title">友情链接</h3>
+<h3 class="title">Blogroll</h3>
 <ul class="entry">
 <li><a href="http://zipperary.com/categories/hexo/" title="Zippera/hexo">Zippera/hexo</a></li>
 </ul>
@@ -289,6 +302,12 @@ Theme of Lightum
   $('.fancybox').fancybox();
 })(jQuery);
 </script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="���ض���"><img src="/imgs/scrollup.png"/></a>
+</div>
+<script src="/js/totop.js"></script>
 
 
 <!-- mathjax config similar to math.stackexchange -->
@@ -320,6 +339,36 @@ Theme of Lightum
 </script>
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </body>
 </html>

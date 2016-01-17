@@ -4,7 +4,7 @@
   <subtitle><![CDATA[learn by doing]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gozeyang.com/"/>
-  <updated>2016-01-15T07:15:08.012Z</updated>
+  <updated>2016-01-16T00:32:16.553Z</updated>
   <id>http://gozeyang.com/</id>
   
   <author>
@@ -15,15 +15,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Markdown插入数学公式]]></title>
+    <link href="http://gozeyang.com/2016/01/15/Markdown%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    <id>http://gozeyang.com/2016/01/15/Markdown插入数学公式/</id>
+    <published>2016-01-15T23:27:26.000Z</published>
+    <updated>2016-01-16T00:32:16.553Z</updated>
+    <content type="html"><![CDATA[<p>练习 在Markdown中插入LaTex数学公式<br><a id="more"></a></p>
+<ul>
+<li>使用Hexo MathJax插件, 参照<a href="http://catx.me/2014/03/09/hexo-mathjax-plugin/" target="_blank" rel="external">教程</a></li>
+<li>手动添加也可以，<a href="http://www.winterland.me/2013/12/08/hexo-mathjax/" target="_blank" rel="external">页面后面加载</a></li>
+</ul>
+<p>Mathjax的语法和LaTeX一致</p>
+<p><strong>MathJax Inline:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Simple inline $a = b + c$</span><br></pre></td></tr></table></figure></p>
+<p>效果:<br>Simple inline $a = b + c$</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#22823;&#23478;&#37117;&#21916;&#27426;$E=mc^2$&#20030;&#20363;&#23376;&#65292;&#25105;&#20063;&#35201;&#12290;&#10;&#36825;&#20010;&#20844;&#24335;$\cos2\theta = \cos^2\theta - \sin^2\theta = 2\cos^2\theta -1$ &#19977;&#35282;&#21547;&#26641;&#65311;&#10;&#25554;&#20837;&#26041;&#31243;&#32452;(&#27880;&#24847;&#22810;&#34892;&#20844;&#24335;&#32467;&#23614;`\\`&#25913;&#25104;`\\\`&#65292;Markdown&#20250;&#33258;&#21160;&#36716;&#20041;&#31532;&#19968;&#20010;`\\`):&#10;&#10;\begin&#123;aligned&#125;&#10;\dot&#123;x&#125; &#38; = \sigma(y-x) \\\&#10;\dot&#123;y&#125; &#38; = \rho x - y - xz \\\&#10;\dot&#123;z&#125; &#38; = -\beta z + xy&#10;\end&#123;aligned&#125;&#10;&#10;&#25554;&#20837;&#30697;&#38453;&#65288;&#21516;&#19978;&#65289;&#65306;&#10;&#10;\begin&#123;bmatrix&#125;&#10;1 &#38; 2\\\&#10;3 &#38; 4&#10;\end&#123;bmatrix&#125;&#10;&#10;**MathJax Block:**&#65288;&#27880;&#24847;&#26377;&#30340;&#20844;&#24335;&#24320;&#22836;&#19981;&#20250;&#33258;&#21160;&#35782;&#21035;&#65292;&#29992;`$$`&#21253;&#22260;&#65289;&#65306;&#10;$$\frac&#123;\partial u&#125;&#123;\partial t&#125; &#10;= h^2 \left( \frac&#123;\partial^2 u&#125;&#123;\partial x^2&#125; +&#10;\frac&#123;\partial^2 u&#125;&#123;\partial y^2&#125; +&#10;\frac&#123;\partial^2 u&#125;&#123;\partial z^2&#125;\right)$$&#10;&#10;Schrodinger Equation: (&#35831;&#19981;&#35201;&#20197;+ ,- &#31561;&#24320;&#22836;&#65292;&#20197;&#36991;&#20813;&#21644;markdown&#30340;&#26684;&#24335;&#35268;&#23450;&#20914;&#31361;)&#10;$$ i\hbar\frac&#123;\partial \psi&#125;&#123;\partial t&#125;&#10;= \frac&#123;-\hbar^2&#125;&#123;2m&#125; \left(&#10;\frac&#123;\partial^2&#125;&#123;\partial x^2&#125; + &#10;\frac&#123;\partial^2&#125;&#123;\partial y^2&#125; + &#10;\frac&#123;\partial^2&#125;&#123;\partial z^2&#125;&#10;\right) \psi + V \psi.$$</span><br></pre></td></tr></table></figure>
+<p>大家都喜欢$E=mc^2$举例子，我也要。<br>这个公式$\cos2\theta = \cos^2\theta - \sin^2\theta = 2\cos^2\theta -1$ 三角含树？<br>插入方程组(注意多行公式结尾<code>\\</code>改成<code>\\\</code>，Markdown会自动转义第一个<code>\\</code>):</p>
+<p>\begin{aligned}<br>\dot{x} &amp; = \sigma(y-x) \\<br>\dot{y} &amp; = \rho x - y - xz \\<br>\dot{z} &amp; = -\beta z + xy<br>\end{aligned}</p>
+<p>插入矩阵（同上）：</p>
+<p>\begin{bmatrix}<br>1 &amp; 2\\<br>3 &amp; 4<br>\end{bmatrix}</p>
+<p><strong>MathJax Block:</strong>（注意有的公式开头不会自动识别，用<code>$$</code>包围）：<br>$$\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)$$</p>
+<p>Schrodinger Equation:  (请不要以+ ,- 等开头，以避免和markdown的格式规定冲突)<br>$$ i\hbar\frac{\partial \psi}{\partial t}<br>= \frac{-\hbar^2}{2m} \left(<br>\frac{\partial^2}{\partial x^2} +<br>\frac{\partial^2}{\partial y^2} +<br>\frac{\partial^2}{\partial z^2}<br>\right) \psi + V \psi.$$</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>练习 在Markdown中插入LaTex数学公式<br>]]>
+    
+    </summary>
+    
+      <category term="formula" scheme="http://gozeyang.com/tags/formula/"/>
+    
+      <category term="Markdown" scheme="http://gozeyang.com/categories/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[文章嵌入图片，音乐，视频]]></title>
     <link href="http://gozeyang.com/2016/01/15/%E6%96%87%E7%AB%A0%E5%B5%8C%E5%85%A5%E5%9B%BE%E7%89%87,%20%E9%9F%B3%E4%B9%90,%20%E8%A7%86%E9%A2%91/"/>
     <id>http://gozeyang.com/2016/01/15/文章嵌入图片, 音乐, 视频/</id>
     <published>2016-01-15T06:45:37.000Z</published>
-    <updated>2016-01-15T07:15:08.012Z</updated>
+    <updated>2016-01-15T23:38:41.529Z</updated>
     <content type="html"><![CDATA[<p>这是一篇练习, 参照<a href="http://zipperary.com/2013/06/27/media-on-hexo/" target="_blank" rel="external">教程</a><br><a id="more"></a></p>
 <h2 id="u56FE_u7247"><a href="#u56FE_u7247" class="headerlink" title="图片"></a>图片</h2><p>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](http://ww1.sinaimg.cn/large/735df598gw1f006rvt6njj20mu0cuq62.jpg)</span><br></pre></td></tr></table></figure></p>
 <p>效果：<br><img src="http://ww1.sinaimg.cn/large/735df598gw1f006rvt6njj20mu0cuq62.jpg" alt=""></p>
-<h2 id="u89C6_u9891"><a href="#u89C6_u9891" class="headerlink" title="视频"></a>视频</h2><p>嵌入视频的方法和音乐类似，视频网站每个视频页面都会有一个『分享』或『转帖』按钮，点击可以查看代码。<br>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;embed src=&#34;http://player.youku.com/player.php/sid/XMjQyMDM2NzY0/v.swf&#34; allowFullScreen=&#34;true&#34; quality=&#34;high&#34; width=&#34;480&#34; height=&#34;400&#34; align=&#34;middle&#34; allowScriptAccess=&#34;always&#34; type=&#34;application/x-shockwave-flash&#34;&#62;&#60;/embed&#62;</span><br></pre></td></tr></table></figure></p>
+<h2 id="u89C6_u9891"><a href="#u89C6_u9891" class="headerlink" title="视频"></a>视频</h2><p>嵌入视频的方法和音乐类似，视频网站每个视频页面都会有一个『分享』或『转帖』按钮，点击可以查看代码。<br>代码：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">embed</span> <span class="attribute">src</span>=<span class="value">"http://player.youku.com/player.php/sid/XMjQyMDM2NzY0/v.swf"</span> <span class="attribute">allowFullScreen</span>=<span class="value">"true"</span> <span class="attribute">quality</span>=<span class="value">"high"</span> <span class="attribute">width</span>=<span class="value">"480"</span> <span class="attribute">height</span>=<span class="value">"400"</span> <span class="attribute">align</span>=<span class="value">"middle"</span> <span class="attribute">allowScriptAccess</span>=<span class="value">"always"</span> <span class="attribute">type</span>=<span class="value">"application/x-shockwave-flash"</span>&gt;</span><span class="tag">&lt;/<span class="title">embed</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>效果：</p>
 <embed src="http://player.youku.com/player.php/sid/XMjQyMDM2NzY0/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">
 

@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>practice | Zeyang&#39;s blog</title>
+  <title>Markdown插入数学公式 | Zeyang&#39;s blog</title>
   <meta name="author" content="Zeyang">
   
   <meta name="description" content="Zeyang&#39;s blog">
@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Markdown插入数学公式"/>
   <meta property="og:site_name" content="Zeyang&#39;s blog"/>
 
   
@@ -202,37 +202,110 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title tag">practice</h2>
-
-
-  <div class="archive">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
     
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2016-01-15T06:45:37.000Z"><a href="/2016/01/15/文章嵌入图片, 音乐, 视频/">2016-01-15</a></time>
-            
-              <h1 class="title"><a href="/2016/01/15/文章嵌入图片, 音乐, 视频/">文章嵌入图片，音乐，视频</a></h1>
-            
-          </header>
-        </div>
-      </article>
-    
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2016-01-09T21:35:57.000Z"><a href="/2016/01/09/第一篇文章 Markdown用法/">2016-01-09</a></time>
-            
-              <h1 class="title"><a href="/2016/01/09/第一篇文章 Markdown用法/">第一篇文章 Markdown用法</a></h1>
-            
-          </header>
-        </div>
-      </article>
+      <img src="">
     
   </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-01-15T23:27:26.000Z"><a href="/2016/01/15/Markdown插入数学公式/">2016-01-15</a></time>
+      
+      
+  
+    <h1 class="title">Markdown插入数学公式</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>练习 在Markdown中插入LaTex数学公式<br><a id="more"></a></p>
+<ul>
+<li>使用Hexo MathJax插件, 参照<a href="http://catx.me/2014/03/09/hexo-mathjax-plugin/" target="_blank" rel="external">教程</a></li>
+<li>手动添加也可以，<a href="http://www.winterland.me/2013/12/08/hexo-mathjax/" target="_blank" rel="external">页面后面加载</a></li>
+</ul>
+<p>Mathjax的语法和LaTeX一致</p>
+<p><strong>MathJax Inline:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Simple inline $a = b + c$</span><br></pre></td></tr></table></figure></p>
+<p>效果:<br>Simple inline $a = b + c$</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#22823;&#23478;&#37117;&#21916;&#27426;$E=mc^2$&#20030;&#20363;&#23376;&#65292;&#25105;&#20063;&#35201;&#12290;&#10;&#36825;&#20010;&#20844;&#24335;$\cos2\theta = \cos^2\theta - \sin^2\theta = 2\cos^2\theta -1$ &#19977;&#35282;&#21547;&#26641;&#65311;&#10;&#25554;&#20837;&#26041;&#31243;&#32452;(&#27880;&#24847;&#22810;&#34892;&#20844;&#24335;&#32467;&#23614;`\\`&#25913;&#25104;`\\\`&#65292;Markdown&#20250;&#33258;&#21160;&#36716;&#20041;&#31532;&#19968;&#20010;`\\`):&#10;&#10;\begin&#123;aligned&#125;&#10;\dot&#123;x&#125; &#38; = \sigma(y-x) \\\&#10;\dot&#123;y&#125; &#38; = \rho x - y - xz \\\&#10;\dot&#123;z&#125; &#38; = -\beta z + xy&#10;\end&#123;aligned&#125;&#10;&#10;&#25554;&#20837;&#30697;&#38453;&#65288;&#21516;&#19978;&#65289;&#65306;&#10;&#10;\begin&#123;bmatrix&#125;&#10;1 &#38; 2\\\&#10;3 &#38; 4&#10;\end&#123;bmatrix&#125;&#10;&#10;**MathJax Block:**&#65288;&#27880;&#24847;&#26377;&#30340;&#20844;&#24335;&#24320;&#22836;&#19981;&#20250;&#33258;&#21160;&#35782;&#21035;&#65292;&#29992;`$$`&#21253;&#22260;&#65289;&#65306;&#10;$$\frac&#123;\partial u&#125;&#123;\partial t&#125; &#10;= h^2 \left( \frac&#123;\partial^2 u&#125;&#123;\partial x^2&#125; +&#10;\frac&#123;\partial^2 u&#125;&#123;\partial y^2&#125; +&#10;\frac&#123;\partial^2 u&#125;&#123;\partial z^2&#125;\right)$$&#10;&#10;Schrodinger Equation: (&#35831;&#19981;&#35201;&#20197;+ ,- &#31561;&#24320;&#22836;&#65292;&#20197;&#36991;&#20813;&#21644;markdown&#30340;&#26684;&#24335;&#35268;&#23450;&#20914;&#31361;)&#10;$$ i\hbar\frac&#123;\partial \psi&#125;&#123;\partial t&#125;&#10;= \frac&#123;-\hbar^2&#125;&#123;2m&#125; \left(&#10;\frac&#123;\partial^2&#125;&#123;\partial x^2&#125; + &#10;\frac&#123;\partial^2&#125;&#123;\partial y^2&#125; + &#10;\frac&#123;\partial^2&#125;&#123;\partial z^2&#125;&#10;\right) \psi + V \psi.$$</span><br></pre></td></tr></table></figure>
+<p>大家都喜欢$E=mc^2$举例子，我也要。<br>这个公式$\cos2\theta = \cos^2\theta - \sin^2\theta = 2\cos^2\theta -1$ 三角含树？<br>插入方程组(注意多行公式结尾<code>\\</code>改成<code>\\\</code>，Markdown会自动转义第一个<code>\\</code>):</p>
+<p>\begin{aligned}<br>\dot{x} &amp; = \sigma(y-x) \\<br>\dot{y} &amp; = \rho x - y - xz \\<br>\dot{z} &amp; = -\beta z + xy<br>\end{aligned}</p>
+<p>插入矩阵（同上）：</p>
+<p>\begin{bmatrix}<br>1 &amp; 2\\<br>3 &amp; 4<br>\end{bmatrix}</p>
+<p><strong>MathJax Block:</strong>（注意有的公式开头不会自动识别，用<code>$$</code>包围）：<br>$$\frac{\partial u}{\partial t}<br>= h^2 \left( \frac{\partial^2 u}{\partial x^2} +<br>\frac{\partial^2 u}{\partial y^2} +<br>\frac{\partial^2 u}{\partial z^2}\right)$$</p>
+<p>Schrodinger Equation:  (请不要以+ ,- 等开头，以避免和markdown的格式规定冲突)<br>$$ i\hbar\frac{\partial \psi}{\partial t}<br>= \frac{-\hbar^2}{2m} \left(<br>\frac{\partial^2}{\partial x^2} +<br>\frac{\partial^2}{\partial y^2} +<br>\frac{\partial^2}{\partial z^2}<br>\right) \psi + V \psi.$$</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/Markdown/">Markdown</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/formula/">formula</a>
+  </div>
+
+		
+     
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    
+    <a href="/2016/01/15/文章嵌入图片, 音乐, 视频/" class="alignright next" >Next</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+
+
+
+<!--多说公共JS代码 BEGIN -->
+
+<section id="comment">
+	<div class="ds-thread" ></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name: 'gozeyang'};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	</section>
+	
+<!-- 多说公共JS代码 end -->
+
+  
+
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">

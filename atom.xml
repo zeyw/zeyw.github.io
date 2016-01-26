@@ -4,7 +4,7 @@
   <subtitle><![CDATA[learn by doing]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://gozeyang.com/"/>
-  <updated>2016-01-16T00:32:16.553Z</updated>
+  <updated>2016-01-26T02:03:53.761Z</updated>
   <id>http://gozeyang.com/</id>
   
   <author>
@@ -13,6 +13,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[660-Mining Massive Datasets Final Project]]></title>
+    <link href="http://gozeyang.com/2016/01/25/660-Mining-Massive-Datasets-Final-Project/"/>
+    <id>http://gozeyang.com/2016/01/25/660-Mining-Massive-Datasets-Final-Project/</id>
+    <published>2016-01-26T01:29:20.000Z</published>
+    <updated>2016-01-26T02:03:53.761Z</updated>
+    <content type="html"><![CDATA[<p>Project Name: Distributed analysis of Big Data networks<br><a id="more"></a><br>Team Member: Zeyang Wu<br>Explore distributed graph analysis libs:</p>
+<ul>
+<li>GraphLab</li>
+<li>Giraph</li>
+</ul>
+<p>Graph analysis examples:</p>
+<ul>
+<li>How to find communities?</li>
+<li>How to find central nodes?</li>
+<li>How to combine the network structure and node attributes for communities?</li>
+<li>Comparison between Hadoop and Giraph</li>
+</ul>
+<p>Challenges:</p>
+<ul>
+<li>How to transfer single-machine problems to distributed version</li>
+<li>How to process graphs that change over time?</li>
+</ul>
+<p>Data:</p>
+<ul>
+<li>SNAP from Stanford</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Project Name: Distributed analysis of Big Data networks<br>]]>
+    
+    </summary>
+    
+      <category term="SNAP" scheme="http://gozeyang.com/tags/SNAP/"/>
+    
+      <category term="graph" scheme="http://gozeyang.com/tags/graph/"/>
+    
+      <category term="DM" scheme="http://gozeyang.com/categories/DM/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Markdown插入数学公式]]></title>
